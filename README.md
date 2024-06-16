@@ -1,6 +1,6 @@
 # Previsão do Tempo App
 
-Este projeto é uma aplicação web simples para consultar a previsão do tempo de diferentes cidades. Ele utiliza Spring Boot no backend para integrar com a API do OpenWeatherMap e oferece uma interface amigável para os usuários.
+Este projeto é uma aplicação web simples para consultar a previsão do tempo de diferentes cidades. Ele utiliza Spring Boot no backend para integrar com a API do OpenWeatherMap e oferece uma interface amigável para os usuários com javaScript, HTML e CSS.
 
 ## Funcionalidades
 
@@ -25,8 +25,8 @@ Para executar este projeto localmente, você precisará ter o Java e o Maven ins
    cd previsao-do-tempo-app
    ```
 
-2. Configure sua chave da API do OpenWeatherMap:
-   - Edite o arquivo `PrevisaoService.java` e substitua `apiKey` com sua chave de API.
+2. Configure suas chaves API:
+   - Edite os arquivos `PrevisaoService.java` e `script.js` e substitua as `API-KEYS` com suas chaves.
 
 3. Execute o projeto com Maven:
    ```bash
