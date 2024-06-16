@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Configurar o autocompletar com GeoNames
     $("#cidade").autocomplete({
         source: function (request, response) {
-            const username = 'gabrielwrubel';
+            const username = 'SEU-USERNAME';
             const url = `http://api.geonames.org/searchJSON?q=${request.term}&maxRows=10&username=${username}`;
 
             // Requisição AJAX para GeoNames
@@ -29,7 +29,7 @@ $(document).ready(function () {
             navigator.geolocation.getCurrentPosition(position => {
                 const lat = position.coords.latitude;
                 const lng = position.coords.longitude;
-                const username = 'gabrielwrubel';
+                const username = 'SEU-USERNAME';
                 const url = `http://api.geonames.org/findNearbyPlaceNameJSON?lat=${lat}&lng=${lng}&username=${username}`;
 
                 // Requisição AJAX para GeoNames usando geolocalização
@@ -94,7 +94,7 @@ async function getTempo() {
             document.getElementById('res-vento').innerText = data.wind.speed + ' (km/h)';
 
             // Buscar imagem relacionada à cidade usando Unsplash API
-            const accessKey = 'B3jh1RsxmBymzcx40gSGczQBJnebg_mXqP6UOKeeTIk';
+            const accessKey = 'SUA-API-KEY';
             const cidade = data.name;
             fetch(`https://api.unsplash.com/search/photos?query=${cidade}&client_id=${accessKey}`)
                 .then(response => response.json())
@@ -138,7 +138,7 @@ async function getSugestao(event) {
             document.getElementById('res-umidade').innerText = data.main.humidity + '%';
             document.getElementById('res-vento').innerText = data.wind.speed + ' (km/h)';
 
-            const accessKey = 'B3jh1RsxmBymzcx40gSGczQBJnebg_mXqP6UOKeeTIk';
+            const accessKey = 'SUA-API-KEY';
             const cidade = data.name;
 
             fetch(`https://api.unsplash.com/search/photos?query=${cidade}&client_id=${accessKey}`)

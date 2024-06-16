@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 @Service
 public class PrevisaoService {
     public static final Logger log = Logger.getLogger(PrevisaoService.class);
-    private final String apiKey = "43faa7b3d404d75d3cce6cd1e14ccd14";
+    private final String apiKey = "SUA-API-KEY";
     private final String apiUrl = "https://api.openweathermap.org/data/2.5/weather";
 
     public PrevisaoResponse getTempo(int cityId) {
