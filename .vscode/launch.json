@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PrevisaoService",
+            "request": "launch",
+            "mainClass": "com.previsaodotempo.service.PrevisaoService",
+            "projectName": "v1"
+        },
+        {
+            "type": "java",
+            "name": "PrevisaoApp",
+            "request": "launch",
+            "mainClass": "com.previsaodotempo.PrevisaoApp",
+            "projectName": "v1"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Main<v1>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.previsaodotempo.Main",
+            "projectName": "v1",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
